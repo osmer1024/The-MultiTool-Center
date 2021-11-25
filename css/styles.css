@@ -1,0 +1,187 @@
+/*--------------------Log in/Register Page--------------------*/
+body{
+    background-image: linear-gradient(45deg, #1D2B64, #F8CDDA);
+    width: 99vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*page main container*/
+.signin_register_form{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.61);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*title*/
+.title{
+    font-weight: bold;
+    margin-bottom: 180px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+/*hide registeration section*/
+#registerSec{
+    padding: 0 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.87);
+    display: none;
+}
+
+#registerSec label{
+    margin: 0;
+}
+
+.regLabel{
+    padding-left: 20px;
+    color: rgb(94, 91, 255);
+    font-weight: bold;
+}
+
+#accountMismatch, #accountIncomplete, #passWarning, #fillWarning, #checkoutContainer, #emailWarning{
+    display: none;
+}
+
+/*--------------------Home Page--------------------*/
+#shoppingHomePage{
+    width: 100vw;
+    height: 88vh;
+    overflow-y: scroll;
+}
+
+/*set logo size*/
+.mainlogo{
+    width: 100px;
+    height: 81px;
+    margin: 0 10px 5px 0;
+}
+
+
+nav{
+    background: rgba(255, 255, 255, 0.863)
+}
+
+/*nav bar text*/
+nav li h3{
+    color: black;
+    margin: 10px 15px;
+}
+
+
+/*navbar spacer*/
+#navbarSpacer{
+    width: 200px;
+    height: 10px;
+}
+
+
+/*Nav bar cart item indicator*/
+.cartGroup input{
+    width: 55px;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+/*Nav bar cart iconr*/
+.cartGroup img, .accountGroup img{
+    width: 65px;
+    height: 65px;
+}
+
+.cartGroup{
+    margin: 10px 20px 10px 0;
+}
+
+
+.accountGroup input{
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#signOutButton{
+    display: none;
+}
+
+
+/*Tool Card*/
+/*main card*/
+.multitoolItem .card{
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+/*tool title*/
+.toolName{
+    text-align: center;
+}
+
+/*tool image*/
+.toolImage{
+    width: 200px;
+}
+
+/*tool price description*/
+.toolPriceBox{
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: bold;
+}
+
+/*add to cart section*/
+/*input*/
+.amountInput{
+    width: 80%;
+    font-size: 1.27rem;
+}
+
+/*button*/
+.addCart{
+    padding: 10 25px;
+}
+
+/*---------Shopping Cart---------*/
+.topWindow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background: rgb(235, 234, 234);
+}
+/*, #checkoutContainer*/
+#shoppingCartContainer, #checkoutContainer{
+    overflow-y: scroll;
+    display: none;
+}
+
+.removeButton{
+    width: 60px;
+    height: 45px;
+    flex: 0 0 10%;
+    border-radius: 5px;
+    background: rgb(250, 140, 140);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cartListContainer{
+    padding: 20px 10px;
+    background: white;
+    width: 90vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    #cartHeader{
+        display: none;
+    }
+}
